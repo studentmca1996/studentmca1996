@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix India - Watch TV Show Online, Watch Movie Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js>
+</head>
+<body>
+        <div class="container">
+        <nav class="navbar">
+                <div class="image">
+                <background src="image/net.jpg" alt="">
+                   </div>      
+
+        <div class="left">
+            <img src="image/netflixlogo.png" alt="" > 
+                
+        </div>
+
+        <div class="right">
+            <h1><marquee> Netflix</h1> </marquee>
+        </div>
+                
+
+
+        <div class="right">
+            <select name="language" class="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+            </select>
+                    <button><a href="#">Sign In</a></button>
+        </div>
+        </nav>
+
+        <div class="title">
+        <div class="content">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+             <form action="#">
+                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div class="email">
+                    <input type="email" name="email" placeholder="Email address">
+                    <button><a href="#">Get Started  ></a></button>
+        </div>
+
+
+        <div class="inner">
+        <div class="banner flex">
+                <h3>Marvel's Studio's </h3>
+                <h1> Avengers : end game</h1>
+        <div class="banner -button flex">
+                <button class="btn"><span class="fa fa-play play" aria-hidden="true"></span>play</button>
+                <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true"></span>more Info</button>
+        </div>
+        </div>
+</form>
+</div>
+</div>
+       <div class="row"><h3> New Release</h3></div>
+                <div class="row">
+        
+                <marquee scrollamount="20" style="width:100%">
+            
+               <img src="image/3idiots.jpg" alt="" height="200px"width="200px" >
+               <img src="image/bolly.jpg" alt="" height="200px"width="200px" >
+               <img src="image/hindi.jpg" alt="" height="200px"width="200px">
+               <img src="image/holly.jpg" alt="" height="200px"width="200px">
+               <img src="image/ram.jpg" alt="" height="200px"width="200px"> 
+               <img src="image/pokemon.jpg" alt="" height="200px"width="200px">
+               <img src="image/sports.jpg" alt="" height="200px"width="200px">
+                </marquee>
+                </div>
+        </div>
+    
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="image/net.jpg" alt="" class="card-img-top">
+                <div class="card-boby">
+                    <h1 class="text-danger text-center">suraj</h1>
+                    <p style=""></p> my name is suraj class mca</p>
+                    <button class="text-bg-danger">read more &rAarr;</button>
+        
+                </div>
+                    </div>
+                    </div>
+        
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/net.jpg" alt="" class="card-img-top">
+                            <div class="card-boby">
+                                <h1 class="text-danger text-center">suraj</h1>
+                                <p style="">my name is suraj class mca</p>
+                                <button class="text-bg-danger">read more & arr;</button>
+                    
+                            </div>
+                                </div>
+                                </div>
+        
+                                <div class="col-sm-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="image/net.jpg" alt="" class="card-img-top">
+                                        <div class="card-boby">
+                                            <h1 class="text-danger text-center">suraj</h1>
+                                            <p style="">my name is suraj class mca</p>
+                                            <button class="text-bg-danger">read more & arr;</button>
+                                
+                                        </div>
+                                            </div>
+                                            </div>
+
+
+
+                <script src="js/script.js"></script>
+                
+</div>
+</body>
+</html>
+</body>
+</html>
+
+
+
+css
+let navbar = document.getElementById("navbar")
+
+const toggle=() =>{
+    if(navbar.style.display=="none"){ 
+        navbar.style.display=="block"
+        navbar.style.display=="left" 
+
+    }
+else{
+    navbar.style.display=="none"
+}
+
+function carousel(){
+    let carouselSlider =document.querySelector("carousel-s")
+    let list = document. querySelector(".carousel-list")
+    let item= document. querySelector(".carousel-item")
+    let list2
+
+
+const speed =1
+const width = list.offsetWidth
+let x = 0
+let x2 =width
+}
+ 
+functionclone(){
+    list2=list.cloneNode(true)
+    carouselSlider.appendChild(list2)
+    list2.style.left ='${width}px'
+}
+
+function movefirst(){
+    x-=speed
+
+    if(width>=Math.abs(x)){
+        list.style.left='${x}px'
+    } else{
+        x=width
+    }
+}
+function moveSecond() {
+    x2-=speed
+
+    if(list.offsetWidth>=Math.abs(x2)){ 
+    list2.style.left='${x2}px'
+
+}else{
+
+    x2 = width
+}
+}
+function hover(){
+    clearInterval(a)
+    clearInterval(b)
+}
+function unhover(){
+    a = clearInterval(movefirst,10)
+   b =  clearInterval(moveSecond,10)
+
+}
+clone()
+
+a = clearInterval(movefirst,10)
+b =  clearInterval(moveSecond,1)
+carouselSlider.asseventlistener("mouseenter,hover")
+carouselSlider.asseventlistener("mouseenter,unhover")
+carousel()
+}
